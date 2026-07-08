@@ -13,7 +13,7 @@ app.use((req, res, next) => {
       res.contentType("text/css");
     if (req.path.endsWith("html"))
       res.contentType("text/html");
-    fs.createReadStream(__dirname + "/panel" + (req.path.length < 2 ? "/index.html" : req.path)).pipe(res);
+    fs.createReadStream(__dirname + "/" + (req.path.length < 2 ? "/index.html" : req.path)).pipe(res);
   } catch (error) {
     console.log(error);
     res.status(404).send("not found!")
