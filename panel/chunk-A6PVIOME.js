@@ -1,0 +1,1 @@
+import{kb as s}from"./chunk-DUVP3S5P.js";import"./chunk-ECBXVGWK.js";var n=class e{static \u0275fac=function(t){return new(t||e)};static \u0275cmp=s({type:e,selectors:[["app-settings"]],decls:0,vars:0,template:function(t,a){},encapsulation:2})};export{n as Settings};

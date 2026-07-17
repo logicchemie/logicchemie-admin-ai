@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" data-beasties-container>
+
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="utf-8">
+  <title>LogicAi</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    @font-face {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLDz8Z11lFc-K.woff2) format('woff2');
+      unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+    }
+
+    @font-face {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLDz8Z1JlFc-K.woff2) format('woff2');
+      unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    @font-face {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLDz8Z1xlFQ.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    @font-face {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/poppins/v24/pxiEyp8kv8JHgFVrJJbecmNE.woff2) format('woff2');
+      unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+    }
+
+    @font-face {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/poppins/v24/pxiEyp8kv8JHgFVrJJnecmNE.woff2) format('woff2');
+      unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    @font-face {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/poppins/v24/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    @font-face {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLGT9Z11lFc-K.woff2) format('woff2');
+      unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+    }
+
+    @font-face {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLGT9Z1JlFc-K.woff2) format('woff2');
+      unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    @font-face {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    @font-face {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLEj6Z11lFc-K.woff2) format('woff2');
+      unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+    }
+
+    @font-face {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLEj6Z1JlFc-K.woff2) format('woff2');
+      unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    @font-face {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    @font-face {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLCz7Z11lFc-K.woff2) format('woff2');
+      unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+    }
+
+    @font-face {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLCz7Z1JlFc-K.woff2) format('woff2');
+      unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    @font-face {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+  </style>
+  <style>
+    :root {
+      --fa-family-brands: "Font Awesome 7 Brands";
+      --fa-font-brands: normal 400 1em/1 var(--fa-family-brands)
+    }
+
+    :root {
+      --fa-font-regular: normal 400 1em/1 var(--fa-family-classic)
+    }
+
+    :root {
+      --fa-family-classic: "Font Awesome 7 Free";
+      --fa-font-solid: normal 900 1em/1 var(--fa-family-classic);
+      --fa-style-family-classic: var(--fa-family-classic)
+    }
+
+    :root {
+      --iti-hover-color: rgba(0, 0, 0, .05);
+      --iti-border-color: #ccc;
+      --iti-dropdown-bg: white;
+      --iti-icon-color: #555;
+      --iti-spacer-horizontal: 8px;
+      --iti-flag-height: 12px;
+      --iti-flag-width: 16px;
+      --iti-globe-height: 16px;
+      --iti-search-clear-icon-height: 13px;
+      --iti-border-width: 1px;
+      --iti-arrow-height: 4px;
+      --iti-arrow-width: calc((var(--iti-arrow-height) / 2) * 3);
+      --iti-triangle-border: calc(var(--iti-arrow-width) / 2);
+      --iti-arrow-padding: 6px;
+      --iti-flag-sprite-width: 3904px;
+      --iti-flag-sprite-height: 12px;
+      --iti-mobile-popup-margin: 30px
+    }
+
+    :root {
+      --iti-path-flags-1x: url("./media/flags-VTE3O4QA.webp");
+      --iti-path-flags-2x: url("./media/flags@2x-HCMRVUXI.webp")
+    }
+
+    @font-face {
+      font-family: Poppins;
+      font-style: normal;
+      font-display: swap;
+      font-weight: 400;
+      src: url("./media/poppins-devanagari-400-normal-2JE4Z3CD.woff2") format("woff2"), url("./media/poppins-devanagari-400-normal-2ZNG57PP.woff") format("woff");
+      unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09
+    }
+
+    @font-face {
+      font-family: Poppins;
+      font-style: normal;
+      font-display: swap;
+      font-weight: 400;
+      src: url("./media/poppins-latin-ext-400-normal-2E5DQAXQ.woff2") format("woff2"), url("./media/poppins-latin-ext-400-normal-6PKAXVGU.woff") format("woff");
+      unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF
+    }
+
+    @font-face {
+      font-family: Poppins;
+      font-style: normal;
+      font-display: swap;
+      font-weight: 400;
+      src: url("./media/poppins-latin-400-normal-SFWTNBQB.woff2") format("woff2"), url("./media/poppins-latin-400-normal-ZPTYLX7I.woff") format("woff");
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+    }
+
+    @font-face {
+      font-family: Poppins;
+      font-style: normal;
+      font-display: swap;
+      font-weight: 500;
+      src: url("./media/poppins-devanagari-500-normal-LFYTYJCT.woff2") format("woff2"), url("./media/poppins-devanagari-500-normal-763VGAFJ.woff") format("woff");
+      unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09
+    }
+
+    @font-face {
+      font-family: Poppins;
+      font-style: normal;
+      font-display: swap;
+      font-weight: 500;
+      src: url("./media/poppins-latin-ext-500-normal-5AE6DVPL.woff2") format("woff2"), url("./media/poppins-latin-ext-500-normal-4EKIYSNL.woff") format("woff");
+      unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF
+    }
+
+    @font-face {
+      font-family: Poppins;
+      font-style: normal;
+      font-display: swap;
+      font-weight: 500;
+      src: url("./media/poppins-latin-500-normal-O53RGPUQ.woff2") format("woff2"), url("./media/poppins-latin-500-normal-7WHJNQSB.woff") format("woff");
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+    }
+
+    @font-face {
+      font-family: Poppins;
+      font-style: normal;
+      font-display: swap;
+      font-weight: 600;
+      src: url("./media/poppins-devanagari-600-normal-IGWDMXIY.woff2") format("woff2"), url("./media/poppins-devanagari-600-normal-O4YNA3PS.woff") format("woff");
+      unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09
+    }
+
+    @font-face {
+      font-family: Poppins;
+      font-style: normal;
+      font-display: swap;
+      font-weight: 600;
+      src: url("./media/poppins-latin-ext-600-normal-HWA5RN4A.woff2") format("woff2"), url("./media/poppins-latin-ext-600-normal-PWTPPCS6.woff") format("woff");
+      unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF
+    }
+
+    @font-face {
+      font-family: Poppins;
+      font-style: normal;
+      font-display: swap;
+      font-weight: 600;
+      src: url("./media/poppins-latin-600-normal-3BUSBBSI.woff2") format("woff2"), url("./media/poppins-latin-600-normal-YBYM6FEI.woff") format("woff");
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+    }
+
+    * {
+      scrollbar-width: thin;
+      scrollbar-color: #2a2a2a transparent
+    }
+
+    *::-webkit-scrollbar {
+      width: 6px;
+      height: 6px
+    }
+
+    *::-webkit-scrollbar-track {
+      background: transparent
+    }
+
+    *::-webkit-scrollbar-thumb {
+      background: #2a2a2a;
+      border-radius: 6px
+    }
+
+    *::-webkit-scrollbar-thumb:hover {
+      background: #444
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Poppins, sans-serif
+    }
+  </style>
+  <link rel="stylesheet" href="./styles-DNVAQ4JX.css" media="print" onload="this.media='all'"><noscript>
+    <link rel="stylesheet" href="./styles-DNVAQ4JX.css">
+  </noscript>
+</head>
+
+<body>
+  <app-root></app-root>
+  <link rel="modulepreload" href="./chunk-YNETHHZI.js">
+  <link rel="modulepreload" href="./chunk-TTCLN3XL.js">
+  <link rel="modulepreload" href="./chunk-PLBSVDWG.js">
+  <link rel="modulepreload" href="./chunk-QZ57LEYT.js">
+  <link rel="modulepreload" href="./chunk-FSLQULF7.js">
+  <link rel="modulepreload" href="./chunk-4JRBPFRA.js">
+  <link rel="modulepreload" href="./chunk-YV5ZDLRC.js">
+  <link rel="modulepreload" href="./chunk-TNH44CHX.js">
+  <link rel="modulepreload" href="./chunk-DUVP3S5P.js">
+  <link rel="modulepreload" href="./chunk-ECBXVGWK.js">
+  <script src="./polyfills-DHHU6LMO.js" type="module"></script>
+  <script src="./main-CVFALGMB.js" type="module"></script>
+</body>
+
+</html>

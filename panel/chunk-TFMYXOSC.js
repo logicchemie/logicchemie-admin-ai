@@ -1,0 +1,1 @@
+import{Db as s,Eb as n,Rb as o,kb as a}from"./chunk-DUVP3S5P.js";import"./chunk-ECBXVGWK.js";var i=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=a({type:t,selectors:[["app-usage"]],decls:2,vars:0,template:function(e,m){e&1&&(s(0,"p"),o(1,"usage works!"),n())},encapsulation:2})};export{i as Usage};
